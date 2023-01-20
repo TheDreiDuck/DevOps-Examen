@@ -1,4 +1,5 @@
-const { isEmpty } = require("../validations");
+const { internalIP } = require("webpack-dev-server");
+const { isEmpty, addGamerTag } = require("../validations");
 
 describe("validations tests suites - isEmpty", () => {
     test("should return true as the label is undefined", () => {
@@ -18,3 +19,10 @@ describe("validations tests suites - isEmpty", () => {
 });
 
 // TODO: Create tests suite for validation function
+describe("tests of the method gamerTag add who allows to add tags with at least 8 character, 1 special character and 1 number", () => {
+    it("should return false if the tag is empty", () => {
+        const result = addGamerTag("");
+        expect(result).toBe(false);
+    });
+    
+});
