@@ -24,5 +24,9 @@ describe("tests of the method gamerTag add who allows to add tags with at least 
         const result = addGamerTag("");
         expect(result).toBe(false);
     });
-    
+
+    it("sould return false if there are no number", () =>{
+        const result = addGamerTag("gamEr1");
+        expect(result).toBe(false);
+    });
 });
