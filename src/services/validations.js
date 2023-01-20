@@ -1,6 +1,6 @@
 // TODO: Add here the function to validate
 function addGamerTag(gamerTag) {
-    const reg = new RegExp("^[[A-Z$#'%*][0-9]]{8}");
+    const reg = new RegExp("^[[A-Za-Z][0-9][$#'%*]]{8}");
 
     return reg.test(gamerTag);
 };
