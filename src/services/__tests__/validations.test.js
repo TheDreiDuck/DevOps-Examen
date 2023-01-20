@@ -35,5 +35,9 @@ describe("tests of the method gamerTag add who allows to add tags with at least 
         expect(result).toBe(false);
     });
 
+    it("should return false if there are no special characters", () =>{
+        const result = addGamerTag("1aMER");
+        expect(result).toBe(false);
+    });
     
 });
