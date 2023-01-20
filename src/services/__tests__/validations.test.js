@@ -39,5 +39,4 @@ describe("tests of the method gamerTag add who allows to add tags with at least 
         const result = addGamerTag("1aMER");
         expect(result).toBe(false);
     });
-    
 });
